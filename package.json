@@ -1,0 +1,22 @@
+{
+  "name": "challenge14",
+  "version": "1.0.0",
+  "description": "![Design preview for the Clipboard landing page coding challenge](./design/desktop-preview.jpg)",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass/ -o css/ -recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jwalczak94/Clipboard-landing-page.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jwalczak94/Clipboard-landing-page/issues"
+  },
+  "homepage": "https://github.com/jwalczak94/Clipboard-landing-page#readme",
+  "devDependencies": {
+    "node-sass": "^7.0.3"
+  }
+}

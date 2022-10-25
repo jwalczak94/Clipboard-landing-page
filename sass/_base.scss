@@ -1,0 +1,83 @@
+//color variables
+$color-primary: hsl(171, 66%, 44%);
+$color-secondary: hsl(233, 100%, 69%);
+$color-dark-grey: hsl(210, 10%, 33%);
+$color-light-grey: hsl(201, 11%, 66%);
+
+// RESPONSIVE BREAKPOINTS
+$bp-largest: 75em; //1200px
+$bp-large: 56.25em; //900px
+$bp-medium: 50em; //800px
+$bp-small: 37.5em; //600px
+
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media (max-width: $bp-largest) {
+        font-size: 56.25%;
+    }
+
+    @media (max-width: $bp-small) {
+        font-size: 50%;
+    }
+}
+
+body {
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-weight: 300;
+    color: $color-dark-grey;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 10rem;
+}
+
+.buttons-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+
+    @media (max-width: $bp-medium) {
+        flex-direction: column;
+    }
+
+    @media (max-width: $bp-small) {
+        align-items: stretch;
+    }
+}
+
+.description {
+    max-width: 70rem;
+    margin-bottom: 8rem;
+
+    @media (max-width: $bp-medium) {
+        margin-bottom: 5rem;
+        max-width: 75%;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
