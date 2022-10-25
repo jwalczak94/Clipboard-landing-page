@@ -59,23 +59,25 @@ body {
   @media (max-width: 37.5em) {
     /* line 63, sass/_base.scss */
     .buttons-container {
-      align-items: stretch; } }
+      align-items: stretch;
+      width: 80%;
+      max-width: 50rem; } }
 
-/* line 78, sass/_base.scss */
+/* line 80, sass/_base.scss */
 .description {
   max-width: 70rem;
   margin-bottom: 8rem; }
   @media (max-width: 50em) {
-    /* line 78, sass/_base.scss */
+    /* line 80, sass/_base.scss */
     .description {
       margin-bottom: 5rem;
       max-width: 75%; } }
 
-/* line 88, sass/_base.scss */
+/* line 90, sass/_base.scss */
 a {
   text-decoration: none; }
 
-/* line 92, sass/_base.scss */
+/* line 94, sass/_base.scss */
 ul {
   list-style: none; }
 

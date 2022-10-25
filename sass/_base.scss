@@ -72,6 +72,8 @@ body {
 
     @media (max-width: $bp-small) {
         align-items: stretch;
+        width: 80%;
+        max-width: 50rem;
     }
 }
 
