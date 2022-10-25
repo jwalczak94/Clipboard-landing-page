@@ -1,0 +1,123 @@
+///////////////////////
+// SNIPPETS SECTION
+.snippets {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10rem;
+
+    @media (max-width: $bp-large) {
+        gap: 5rem;
+    }
+
+    @media (max-width: $bp-medium) {
+        flex-direction: column;
+        max-width: 80%;
+    }
+
+    &__img {
+        flex-basis: 60%;
+        transform: scale(1.2) translateX(-50px);
+
+        @media (max-width: $bp-medium) {
+            transform: scale(1) translateX(0);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__features {
+        flex-basis: 40%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    &__description {
+        text-align: left;
+        margin: 2.5rem 0;
+
+        p {
+            max-width: 35rem;
+        }
+
+        @media (max-width: $bp-medium) {
+            text-align: center;
+        }
+    }
+}
+
+
+///////////////////////
+// ACCESS SECTION
+.access {
+    &__img {
+        max-width: 80%;
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+
+///////////////////////
+// WORKFLOW SECTION
+.workflow {
+    &__features {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        justify-content: center;
+        max-width: 120rem;
+
+        @media (max-width: $bp-medium) {
+            grid-template-columns: 1fr;
+            gap: 5rem;
+            max-width: 80%;
+        }
+    }
+
+    &__feature {
+        padding: 1.5rem;
+
+        &__icon {
+            height: 3rem;
+        }
+    }
+
+    &__logos {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        justify-items: center;
+        align-items: center;
+        column-gap: 10rem;
+
+        margin: 15rem 0 5rem;
+        max-width: 90%;
+
+        @media (max-width: $bp-large) {
+            gap: 8rem;
+        }
+
+        @media (max-width: $bp-medium) {
+            gap: 5rem;
+        }
+
+        @media (max-width: $bp-small) {
+            grid-template-columns: 1fr;
+            max-width: 45%;
+            gap: 8rem;
+        }
+
+        img {
+            max-height: 6rem;
+            max-width: 100%;
+        }
+    }
+}

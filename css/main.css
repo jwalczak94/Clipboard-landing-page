@@ -1,0 +1,332 @@
+/* line 14, sass/_base.scss */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+/* line 22, sass/_base.scss */
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+  @media (max-width: 75em) {
+    /* line 22, sass/_base.scss */
+    html {
+      font-size: 56.25%; } }
+  @media (max-width: 37.5em) {
+    /* line 22, sass/_base.scss */
+    html {
+      font-size: 50%; } }
+
+/* line 35, sass/_base.scss */
+body {
+  font-family: 'Bai Jamjuree', sans-serif;
+  font-weight: 300;
+  color: #4c545d;
+  line-height: 1.6;
+  text-align: center; }
+
+/* line 43, sass/_base.scss */
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10rem; }
+
+/* line 52, sass/_base.scss */
+.buttons-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem; }
+  @media (max-width: 50em) {
+    /* line 52, sass/_base.scss */
+    .buttons-container {
+      flex-direction: column; } }
+  @media (max-width: 37.5em) {
+    /* line 52, sass/_base.scss */
+    .buttons-container {
+      align-items: stretch; } }
+
+/* line 67, sass/_base.scss */
+.description {
+  max-width: 70rem;
+  margin-bottom: 8rem; }
+  @media (max-width: 50em) {
+    /* line 67, sass/_base.scss */
+    .description {
+      margin-bottom: 5rem;
+      max-width: 75%; } }
+
+/* line 77, sass/_base.scss */
+a {
+  text-decoration: none; }
+
+/* line 81, sass/_base.scss */
+ul {
+  list-style: none; }
+
+/* line 7, sass/_typography.scss */
+.btn {
+  display: inline-block;
+  color: #fff;
+  border: none;
+  border-radius: 100px;
+  padding: 1.5rem 3rem;
+  font-family: inherit;
+  font-size: 1.8rem;
+  font-weight: 600;
+  transition: .3s;
+  cursor: pointer; }
+  @media (max-width: 50em) {
+    /* line 7, sass/_typography.scss */
+    .btn {
+      font-size: 2.0rem; } }
+  /* line 23, sass/_typography.scss */
+  .btn__primary {
+    background-color: #26baa4;
+    box-shadow: 0px 15px 30px rgba(38, 186, 164, 0.2), inset -2px -4px #1d907f; }
+    /* line 26, sass/_typography.scss */
+    .btn__primary:hover {
+      background-color: #2acfb7; }
+  /* line 31, sass/_typography.scss */
+  .btn__secondary {
+    background-color: #6173ff;
+    box-shadow: 0px 15px 30px rgba(97, 115, 255, 0.2), inset -2px -4px #2e46ff; }
+    /* line 34, sass/_typography.scss */
+    .btn__secondary:hover {
+      background-color: #7a8aff; }
+
+/* line 41, sass/_typography.scss */
+.heading-1 {
+  font-size: 4.8rem; }
+  @media (max-width: 50em) {
+    /* line 41, sass/_typography.scss */
+    .heading-1 {
+      font-size: 4.1rem; } }
+
+/* line 49, sass/_typography.scss */
+.heading-2 {
+  font-size: 4rem; }
+
+/* line 53, sass/_typography.scss */
+.heading-3 {
+  font-size: 2.5rem; }
+
+/* line 58, sass/_typography.scss */
+.text {
+  color: #9fabb2; }
+
+/* line 63, sass/_typography.scss */
+.paragraph-1 {
+  font-size: 2rem; }
+
+/* line 67, sass/_typography.scss */
+.paragraph-2 {
+  font-size: 1.8rem; }
+
+/* line 71, sass/_typography.scss */
+.paragraph-3 {
+  font-size: 1.65rem; }
+
+@media (max-width: 50em) {
+  /* line 75, sass/_typography.scss */
+  .paragraph-2, .paragraph-3 {
+    font-size: 2rem; } }
+
+/* line 83, sass/_typography.scss */
+.mb-1 {
+  margin-bottom: 1rem; }
+
+/* line 87, sass/_typography.scss */
+.mb-2 {
+  margin-bottom: 2rem; }
+
+/* line 91, sass/_typography.scss */
+.mb-3 {
+  margin-bottom: 3rem; }
+
+/* line 95, sass/_typography.scss */
+.mb-4 {
+  margin-bottom: 4rem; }
+
+/* line 1, sass/_header.scss */
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-image: url(../images/bg-header-desktop.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 14rem 0; }
+  /* line 13, sass/_header.scss */
+  .header__content {
+    max-width: 75rem;
+    margin-bottom: 4rem; }
+    @media (max-width: 50em) {
+      /* line 13, sass/_header.scss */
+      .header__content {
+        max-width: 85%; } }
+  @media (max-width: 50em) {
+    /* line 1, sass/_header.scss */
+    .header {
+      background-image: url(../images/bg-header-mobile.png); } }
+
+/* line 3, sass/_sections.scss */
+.snippets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10rem; }
+  @media (max-width: 56.25em) {
+    /* line 3, sass/_sections.scss */
+    .snippets {
+      gap: 5rem; } }
+  @media (max-width: 50em) {
+    /* line 3, sass/_sections.scss */
+    .snippets {
+      flex-direction: column;
+      max-width: 80%; } }
+  /* line 19, sass/_sections.scss */
+  .snippets__img {
+    flex-basis: 60%;
+    transform: scale(1.2) translateX(-50px); }
+    @media (max-width: 50em) {
+      /* line 19, sass/_sections.scss */
+      .snippets__img {
+        transform: scale(1) translateX(0); } }
+    /* line 27, sass/_sections.scss */
+    .snippets__img img {
+      max-width: 100%;
+      height: auto; }
+  /* line 33, sass/_sections.scss */
+  .snippets__features {
+    flex-basis: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+  /* line 40, sass/_sections.scss */
+  .snippets__description {
+    text-align: left;
+    margin: 2.5rem 0; }
+    /* line 44, sass/_sections.scss */
+    .snippets__description p {
+      max-width: 35rem; }
+    @media (max-width: 50em) {
+      /* line 40, sass/_sections.scss */
+      .snippets__description {
+        text-align: center; } }
+
+/* line 58, sass/_sections.scss */
+.access__img {
+  max-width: 80%; }
+  /* line 61, sass/_sections.scss */
+  .access__img img {
+    max-width: 100%;
+    height: auto; }
+
+/* line 72, sass/_sections.scss */
+.workflow__features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  max-width: 120rem; }
+  @media (max-width: 50em) {
+    /* line 72, sass/_sections.scss */
+    .workflow__features {
+      grid-template-columns: 1fr;
+      gap: 5rem;
+      max-width: 80%; } }
+
+/* line 86, sass/_sections.scss */
+.workflow__feature {
+  padding: 1.5rem; }
+  /* line 89, sass/_sections.scss */
+  .workflow__feature__icon {
+    height: 3rem; }
+
+/* line 94, sass/_sections.scss */
+.workflow__logos {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-items: center;
+  align-items: center;
+  column-gap: 10rem;
+  margin: 15rem 0 5rem;
+  max-width: 90%; }
+  @media (max-width: 56.25em) {
+    /* line 94, sass/_sections.scss */
+    .workflow__logos {
+      gap: 8rem; } }
+  @media (max-width: 50em) {
+    /* line 94, sass/_sections.scss */
+    .workflow__logos {
+      gap: 5rem; } }
+  @media (max-width: 37.5em) {
+    /* line 94, sass/_sections.scss */
+    .workflow__logos {
+      grid-template-columns: 1fr;
+      max-width: 45%;
+      gap: 8rem; } }
+  /* line 118, sass/_sections.scss */
+  .workflow__logos img {
+    max-height: 6rem;
+    max-width: 100%; }
+
+/* line 1, sass/_footer.scss */
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  background-color: #f4f5f6;
+  padding: 5rem 10rem; }
+  @media (max-width: 50em) {
+    /* line 1, sass/_footer.scss */
+    .footer {
+      padding: 5rem 3rem; } }
+  @media (max-width: 37.5em) {
+    /* line 1, sass/_footer.scss */
+    .footer {
+      flex-direction: column;
+      justify-content: center;
+      gap: 3.5rem; } }
+  /* line 22, sass/_footer.scss */
+  .footer__logo img {
+    height: 6rem; }
+  /* line 27, sass/_footer.scss */
+  .footer__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    height: 7rem;
+    flex-basis: 60%; }
+    @media (max-width: 37.5em) {
+      /* line 27, sass/_footer.scss */
+      .footer__links {
+        align-items: center;
+        flex-wrap: nowrap;
+        flex-basis: 100%;
+        gap: 2rem; } }
+  /* line 46, sass/_footer.scss */
+  .footer__link a,
+  .footer__social-link a {
+    font-size: 1.8rem;
+    color: #4c545d;
+    transition: 0.3s; }
+    /* line 52, sass/_footer.scss */
+    .footer__link a:hover,
+    .footer__social-link a:hover {
+      color: #26baa4; }
+  /* line 57, sass/_footer.scss */
+  .footer__social-links {
+    display: flex;
+    gap: 3rem; }
+  /* line 62, sass/_footer.scss */
+  .footer__social-link a {
+    font-size: 2.8rem; }
