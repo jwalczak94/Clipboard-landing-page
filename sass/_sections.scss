@@ -13,12 +13,12 @@
 
     @media (max-width: $bp-medium) {
         flex-direction: column;
-        max-width: 80%;
     }
 
     &__img {
-        flex-basis: 60%;
+        flex-basis: 50%;
         transform: scale(1.2) translateX(-50px);
+        margin: 5rem 0;
 
         @media (max-width: $bp-medium) {
             transform: scale(1) translateX(0);
@@ -31,7 +31,7 @@
     }
 
     &__features {
-        flex-basis: 40%;
+        flex-basis: 50%;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -56,7 +56,6 @@
 // ACCESS SECTION
 .access {
     &__img {
-        max-width: 80%;
 
         img {
             max-width: 100%;
@@ -79,7 +78,6 @@
         @media (max-width: $bp-medium) {
             grid-template-columns: 1fr;
             gap: 5rem;
-            max-width: 80%;
         }
     }
 
